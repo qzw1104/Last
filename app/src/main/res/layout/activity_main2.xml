@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@mipmap/mainbgp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F7BE81"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@mipmap/search" />
+
+        <EditText
+            android:id="@+id/searchedit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:background="#8DCCCCCC"
+            android:gravity="center"
+            android:hint="搜索" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#F7BE81" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:shadowColor="#65CCCCCC"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3.0"
+            android:text="我的好友"
+            android:textColor="#7A0A4741"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/booklist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:divider="@drawable/listview_divider"
+            android:dividerHeight="2dp"
+            ></ListView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/flushbtn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:background="@mipmap/flush"
+                />
+
+            <Button
+                android:id="@+id/sharebtn"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_above="@id/flushbtn"
+                android:layout_alignStart="@+id/flushbtn"
+                android:layout_marginBottom="-31dp"
+                android:background="@mipmap/share"
+                />
+
+            <Button
+                android:id="@+id/addbookbtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignStart="@+id/menubtn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="17dp"
+                android:background="@mipmap/addbook"
+                />
+
+
+            <Button
+                android:id="@+id/menubtn"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/menubtn"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#7C6C66"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E4E3E1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mymain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BFDCDBDA"
+            android:text="我的日程"
+            android:textColor="#05655C"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/friendslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="好友列表"
+            android:background="#BFDCDBDA"
+            android:textColor="#05655C"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/myself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BFDCDBDA"
+            android:text="我的主页"
+            android:textColor="#05655C"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
